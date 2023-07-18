@@ -38,8 +38,6 @@ We can also stack the respective groups to improve recall.  For example when we 
 
 Appendix:
 
-The workbook used to build the models and the charts above can be found at this link:
-
-<pyb link>
+The workbook used to build the models and the charts above can be found at [this link](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/bank_load_predictor_workbook.ipynb)
 
 
