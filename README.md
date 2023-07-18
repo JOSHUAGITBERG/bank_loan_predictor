@@ -18,18 +18,30 @@ Modeling Evaluation:
 
      As an exercise, we generated four different regression models.  We optimized parameters for two of the models, and compared the relative recall scores for each.  Recall was used as the determining factor because we want to preserve every loan opportunity.  
 
-<Model Performance>
+![alt text](http://url/to/img.png)
+<Model Performane>
+
 
 Once we were able to compare models, we identified the more important  features from each model, and used those to generate cohorts more likely to sign up for a loan.  
 
-<Feature Importance Chart>
+![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.png)
 
-By reducing the target customer base to those which exhibit important features, we were able to raise our recall score to over 80%.
+By reducing the target customer base to those which exhibit important features, we were able to raise our recall score to over 80%.  
+![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Cohort.png)
 
-<Cohort Performance Chart>
+We can see the impact of the identified features if we group customers into cohorts and measure the percent of customers that took out a loan (“conversion rate”).  For example, we have charted the conversion rate based on occupation in the chart below:
+
+![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Job.png)
+
+We can also stack the respective groups to improve recall.  For example when we stack the top three feature cohorts, which consist of  long standing student customers who have a load already, we can increase the change of reaching a customer from 11% to over 80%.  All cohort information is shown in the chart below:
+
+![alt text](http://url/to/img.png)
+<link to cohort chart> 
+
+Appendix:
 
 The workbook used to build the models and the charts above can be found at this link:
 
 <pyb link>
 
-i
+
