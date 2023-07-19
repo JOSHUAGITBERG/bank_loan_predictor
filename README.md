@@ -78,7 +78,7 @@ Customers who have been in the system more than 220 days
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Cohort.jpg)
 
-![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Blended_Relative_Feature_Importance.png)
+![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Blended_Cohort.jpg)
 
 
 Appendix:
