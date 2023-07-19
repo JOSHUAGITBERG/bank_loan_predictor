@@ -8,27 +8,34 @@ Recommendations:
 
 Sales executives should target the following customers:
 
-Repeat customers
-Customers who previously took a loan are 6x more likely to sign a loan
-Long Duration
-Customers who have been with the bank over 220 days at 5.5x more likely to sign a loan than customers with a shorter duration
-Students and retirees
-Students and retirees are 2.5x more likely than  to sign a loan than other occupations
-Customers without a home are 2x more likely to sign a loan than customers who already have a home
-Customers with a minimum balance of $1300 are 1.5x more likely to sign a loan than customers with a lower balance
+- Repeat customers
+     -  Customers who previously took a loan are 6x more likely to sign a loan
+-  Long Duration
+     -  Customers who have been with the bank over 220 days at 5.5x more likely to sign a loan than customers with a shorter duration
+-  Students and retirees
+     -  Students and retirees are 2.5x more likely than  to sign a loan than other occupations
+-  Home Owners
+     -  Customers without a home are 2x more likely to sign a loan than customers who already 
+        have a home
+-  Large Balance
+     -  Customers with a minimum balance of $1300 are 1.5x more likely to sign a loan than customers with a lower balance
 
 
 Data Activities:
 
-Historical data shows that 11% of customer accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
-The data collected includes 45k records of sixteen features and a yes/no indicator as to  whether the customer agreed to take a loan from the bank.  Full information on the features can be found in the “Attribute Information” section of this link.
-Eleven of the attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’).   
+-  Eleven of the attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’).   
+
+-  Historical data shows that 11% of customer accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
+
+-  The data collected includes 45k records of sixteen features and a yes/no indicator as to  whether the customer agreed to take a loan from the bank.  
+
+-  Full information on the features can be found in the “Attribute Information” section of this link.
 
 Methodology:
 
-Prepare and compare the performance of four logistic regression models
-Identify the most important features in the models, which can be used to build high value cohorts
-Build cohorts and compare predicted conversion rates for each.  The highest scoring cohorts will drive our recommendations to the marketing team
+-  Prepare and compare the performance of four logistic regression models
+-  Identify the most important features in the models, which can be used to build high value cohorts
+-  Build cohorts and compare predicted conversion rates for each.  The highest scoring cohorts will drive our recommendations to the marketing team
 
 Models:
 
@@ -36,12 +43,12 @@ We produced six models, which scored just below 70% precision.  While 70% may be
 In another context, it serves us well here given that our starting point was effectively 11%.
 
 Regression Models:
-Decision Tree
-Logistic Regression
-KNearest Neighbor
-SVC default (radial basis kernel function)
-SVC with linear regression kernel function
-SVC with polynomial kernel function 
+-  Decision Tree
+-  Logistic Regression
+-  KNearest Neighbor
+-  SVC default (radial basis kernel function)
+-  SVC with linear regression kernel function
+-  SVC with polynomial kernel function 
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Model_Scores.jpg)
 
@@ -50,20 +57,21 @@ From the models we extracted feature weights, which compare the relative influen
 Features:
 
 Features to Pursue:
-Duration
-All models agree that duration is the strongest indicator
-Poutcome-
-Previous outcome was the second highest score by SVC, the best performing model
-Housing
-Housing scored highly for both linear regression and SVC
-Balance
-Balance was the second highest indicator for decision tree
+-  Duration
+     -  All models agree that duration is the strongest indicator
+-  Previous outcome (i.e. existing customers)
+     -  Previous outcome was the second highest score by SVC, the best performing model
+-  Housing
+     -  Housing scored highly for both linear regression and SVC
+-  Balance
+     -  Balance was the second highest indicator for decision tree
 
 
 Features to Disregard:
-Although contact scored highly, it effectively a proxy for previous outcome (‘poutcome’)
-Pdays also scored highly in the models, but is also a proxy for poutcome
-Campaign also scored highly, but we do not have information on the campaigns we can use in our analysis
+-  Although contact scored highly, it effectively a proxy for previous outcome (‘poutcome’)
+-  Pdays also scored highly in the models, but is also a proxy for poutcome
+-  Campaign also scored highly, but we do not have information on the campaigns we can use in 
+   our analysis
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.png) 
 
@@ -81,16 +89,16 @@ feature.
 Finally we calculated conversion rate for a long list of cohorts, isolated and blended, from which we determined the recommendations in the summary.  The full list is below:
 
 
-Large Balance
-Customers with a balance over $1300
-Housing
-Customer who do not already have a housing loan
-Student
-Students
-Repeat Customers
-Customers who previously took a loan
-Duration
-Customers who have been in the system more than 220 days
+-  Large Balance
+     -  Customers with a balance over $1300
+-  Housing
+     -  Customer who do not already have a housing loan
+-  Student
+     -  Students
+-  Repeat Customers
+     -  Customers who previously took a loan
+-  Duration
+     -  Customers who have been in the system more than 220 days
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Cohort.jpg)
 
