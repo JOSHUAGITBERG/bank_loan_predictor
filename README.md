@@ -16,8 +16,10 @@ Build cohorts and compare predicted conversion rates for each.  The highest scor
 
 Models:
 
-    We produced six models, which scored just below 70% precision.  While 70% may be low in other use cases, it serves us well here given that our starting point was effectively 11%.  
+We produced six models, which scored just below 70% precision.  While 70% may be low
+In another context, it serves us well here given that our starting point was effectively 11%.
 
+Regression Models:
 Decision Tree
 Logistic Regression
 KNearest Neighbor
