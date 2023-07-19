@@ -1,6 +1,22 @@
+
 Business Problem:
 
 The bank of Portugal collected data on forty four previous marketing campaigns, which have yielded mixed results.  The team would like to leverage the data from generated during the campaigns to generate profiles of future customers most likely to consign a loan so that they can maximize customer loan sales.
+
+Recommendations:
+
+
+Sales executives should target the following customers:
+
+Repeat customers
+Customers who previously took a loan are 6x more likely to sign a loan
+Long Duration
+Customers who have been with the bank over 220 days at 5.5x more likely to sign a loan than customers with a shorter duration
+Students and retirees
+Students and retirees are 2.5x more likely than  to sign a loan than other occupations
+Customers without a home are 2x more likely to sign a loan than customers who already have a home
+Customers with a minimum balance of $1300 are 1.5x more likely to sign a loan than customers with a lower balance
+
 
 Data Activities:
 
