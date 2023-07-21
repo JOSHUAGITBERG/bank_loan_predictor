@@ -104,7 +104,7 @@ Categorical Features:
 
 We did not include jobs information in our regression models because they are not numerical. 
 However, if we calculate the conversion rate per job function and compare it to the other
-features, we see that the student cohor conversion rate scores as the second strongest 
+features, we see that the student cohort conversion rate scores as the second strongest 
 feature. 
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Job.jpg)  
