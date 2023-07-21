@@ -22,23 +22,22 @@ Sales executives should target the following customers:
 
 Data Description:
 
--  16 features are including in the data:
-
-Age of the customer
-Customer occupation
-Marital Status
-Highest level of education
-Whether the customer was in default
-Customer Account Balance
-Whether the customer owns their house
-Whether they currently have a loan
-Whether the customer was previously contacted
-Date of last contact
-Month of last contact
-Duration they have held their account
-Number of days since their last contact
-Number of previous contacts
-Outcome of previous contacts
+- 16 features are including in the data:
+     -  Age of the customer
+     -  Customer occupation
+     -  Marital Status
+     -  Highest level of education
+     -  Whether the customer was in default
+     -  Customer Account Balance
+     -  Whether the customer owns their house
+     -  Whether they currently have a loan
+     -  Whether the customer was previously contacted
+     -  Date of last contact
+     -  Month of last contact
+     -  Duration they have held their account
+     -  Number of days since their last contact
+     -  Number of previous contacts
+     -  Outcome of previous contacts
 Whether a client signed up for a term deposit
 
  Full descriptions of the features can be found in the “Attribute Information” section of this link.
