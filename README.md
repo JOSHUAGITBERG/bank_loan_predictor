@@ -3,7 +3,7 @@
 
 The bank of Portugal collected data on forty four marketing campaigns aimed at signing existing account holders a term deposit.  Previous campaigns averaged a conversion rate of 11%.  The bank would like to leverage data collected during the campaigns to target customers in future campaigns in order to optimize marketing resources and increase the conversion rate.
 
-Recommendations:
+**Recommendations:**
 
 
 Sales executives should target the following customers:
@@ -20,7 +20,7 @@ Sales executives should target the following customers:
      -  Customers with a minimum balance of $1300 are 1.5x more likely to sign up
 
 
-Data Description:
+**Data Description:**
 
 - 16 features are including in the data:
      -  Age of the customer
@@ -42,7 +42,7 @@ Whether a client signed up for a term deposit
 
  Full descriptions of the features can be found in the “Attribute Information” section of this link.
 
-Data Preparations:
+**Data Preparation:**
 
 -  Eleven of the attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’).   
 
@@ -50,14 +50,14 @@ Data Preparations:
 
 -  The data collected includes 45k records with no nulls or duplicates
 
-Methodology:
+**Methodology:**
 
--  Scale the data and fit the data to four logistic regression models
+-  Scale the data and fit the data to four logistic regression models- Knearest Neighbor, Logistic Regression, Decision Tree and SVC
 -  Identify the most important features in the models
 -  Use the highest weighted features to build potentially high value cohorts
 -  Derive insights from the highest performing cohorts identified within the process
 
-Models:
+**Models:**
 
 We produced six models, which scored just below 70% precision.  While 70% may be low
 In another context, it serves us well here given that our initial conversion rate is effectively 11%.
@@ -74,7 +74,7 @@ Regression Models:
 
 From the models we extracted feature weights, which compare the relative influence of each feature on the model.  The results are shown for three of the six models below.  
 
-Features:
+**Features:**
 
 Features to Pursue:
 -  Duration
