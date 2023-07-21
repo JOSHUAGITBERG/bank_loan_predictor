@@ -57,7 +57,7 @@ Whether a client signed up for a term deposit
 -  Scale the data and fit the data to four logistic regression models- Knearest Neighbor, Logistic Regression, Decision Tree and SVC.  We tested rbf, linear and polynomial SVC kernels.
 -  Identify the most important features in the models
 -  Use the highest weighted features to build potentially high value cohorts
--  Derive insights from the highest performing cohorts identified within the process
+-  Calculate conversion rate for each cohort.  This data was the basis for recommendations above. 
 
 **Models:**
 
@@ -83,13 +83,12 @@ Features to Pursue:
      -  All models agree that duration is the strongest indicator
 -  Previous outcome (i.e. existing customers)
      -  Previous outcome was the second highest score by SVC, the best performing model
+- Occupation
+     -  Occupation (or ‘job’) was manually calculated and scored 
 -  Housing
      -  Housing scored highly for both linear regression and SVC
 -  Balance
      -  Balance was the second highest indicator for decision tree
-- Occupation
-
-
 
 Features to Disregard:
 -  Although contact scored highly, it effectively a proxy for previous outcome (‘poutcome’)
@@ -99,7 +98,6 @@ Features to Disregard:
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.png) 
 
-
 Categorical Features:
 
 We did not include jobs information in our regression models because they are not numerical. 
@@ -108,7 +106,6 @@ features, we see that the student cohort conversion rate scores as the second st
 feature. 
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Job.jpg)  
-
 
 Finally we calculated conversion rate for a long list of cohorts, isolated and blended, from which we determined the recommendations in the summary.  The full list is below:
 
