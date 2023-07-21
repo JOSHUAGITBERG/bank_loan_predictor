@@ -15,7 +15,7 @@ Based on the data models discussed below, we recommend that sales executives tar
 -  Students and retirees
      -  Students and retirees are 2.5x more likely than other jobs to sign a loan
 -  Renters
-     -  Renters are 2x more likely to sign up than home owners
+     -  Renters are 2x more likely to sign up than homeowners
 -  Large Balance
      -  Customers with a minimum balance of $1300 are 1.5x more likely to sign up
 
@@ -46,7 +46,7 @@ Whether a client signed up for a term deposit
 
 -  Eleven of the sixteen attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’)
 
--  Historical data shows that 11% of customer accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
+-  Historical data shows that 11% of customers accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
 
 -  Categorical feature “job” was excluded from the models. However, we were able to analyze conversion rates per occupation to determine that it would score as the third most important relative to the features identified by the models.  
 
@@ -86,15 +86,14 @@ Features to Pursue:
 - Occupation
      -  Occupation (or ‘job’) was manually calculated and scored 
 -  Housing
-     -  Housing scored highly for both linear regression and SVC
+     -  Housing scored highly for both logistic regression and SVC
 -  Balance
      -  Balance was the second highest indicator for decision tree
 
 Features to Disregard:
 -  Although contact scored highly, it effectively a proxy for previous outcome (‘poutcome’)
 -  Pdays also scored highly in the models, but is also a proxy for poutcome
--  Campaign also scored highly, but we do not have information on the campaigns we can use in 
-   our analysis
+-  Campaign also scored highly, but we do not have sufficient information to focus on campaign details
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.jpg) 
 
@@ -102,8 +101,7 @@ Categorical Features:
 
 We did not include jobs information in our regression models because they are not numerical. 
 However, if we calculate the conversion rate per job function and compare it to the other
-features, we see that the student cohort conversion rate scores as the second strongest 
-feature. 
+features, we see that the student cohort conversion rate scores as the second strongest raw (non-blended) cohort. 
 
 ![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Conversion_By_Job.jpg)  
 
@@ -114,8 +112,7 @@ Finally we calculated conversion rate for a long list of cohorts, isolated and b
      -  Customers with a balance over $1300
 -  Housing
      -  Customer who do not already have a housing loan
--  Occupation
-     -  Occupation was not included in the regression models because it is not numerical.  However, because it was the only categorical feature, we were able to use groupings to identify that students were slightly more likely to sign up for a term deposit than renters.
+-  Students and retirees 
 -  Repeat Customers
      -  Customers who previously took a loan
 -  Duration
