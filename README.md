@@ -1,5 +1,5 @@
 
-Business Problem:
+**Business Problem:**
 
 The bank of Portugal collected data on forty four marketing campaigns aimed at signing existing account holders a term deposit.  Previous campaigns averaged a conversion rate of 11%.  The bank would like to leverage data collected during the campaigns to target customers in future campaigns in order to optimize marketing resources and increase the conversion rate.
 
