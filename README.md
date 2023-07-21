@@ -22,7 +22,7 @@ Based on the data models discussed below, we recommend that sales executives tar
 
 **Data Description:**
 
-- 16 features are including in the data:
+- The original dataset contains the following 16 features:
      -  Age of the customer
      -  Customer occupation
      -  Marital Status
@@ -44,15 +44,17 @@ Whether a client signed up for a term deposit
 
 **Data Preparation:**
 
--  Eleven of the attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’).   
+-  Eleven of the sixteen attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’)
 
 -  Historical data shows that 11% of customer accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
+
+-  Categorical feature “job” was excluded from the models. However, we were able to analyze conversion rates per occupation to determine that it would score as the third most important relative to the features identified by the models.  
 
 -  The data collected includes 45k records with no nulls or duplicates
 
 **Methodology:**
 
--  Scale the data and fit the data to four logistic regression models- Knearest Neighbor, Logistic Regression, Decision Tree and SVC
+-  Scale the data and fit the data to four logistic regression models- Knearest Neighbor, Logistic Regression, Decision Tree and SVC.  We tested rbf, linear and polynomial SVC kernels.
 -  Identify the most important features in the models
 -  Use the highest weighted features to build potentially high value cohorts
 -  Derive insights from the highest performing cohorts identified within the process
