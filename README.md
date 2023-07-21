@@ -40,7 +40,7 @@ Based on the data models discussed below, we recommend that sales executives tar
      -  Outcome of previous contacts
 Whether a client signed up for a term deposit
 
- Full descriptions of the features can be found in the “Attribute Information” section of this link.
+ Full descriptions of the features can be found in the “Attribute Information” section of this [link](https://archive.ics.uci.edu/dataset/222/bank+marketing)
 
 **Data Preparation:**
 
