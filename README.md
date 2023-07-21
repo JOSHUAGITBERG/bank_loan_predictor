@@ -96,7 +96,7 @@ Features to Disregard:
 -  Campaign also scored highly, but we do not have information on the campaigns we can use in 
    our analysis
 
-![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.png) 
+![alt text](https://github.com/JOSHUAGITBERG/bank_loan_predictor/blob/main/images/Relative_Feature_Importance.jpg) 
 
 Categorical Features:
 
