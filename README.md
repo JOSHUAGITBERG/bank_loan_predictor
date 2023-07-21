@@ -6,7 +6,7 @@ The bank of Portugal collected data on forty four marketing campaigns aimed at s
 **Recommendations:**
 
 
-Sales executives should target the following customers:
+Based on the data models discussed below, we recommend that sales executives target the following customers:
 
 - Repeat customers
      -  Customers who previously took a loan are 6x more likely to sign up for a term deposit
