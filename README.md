@@ -1,7 +1,7 @@
 
 Business Problem:
 
-The bank of Portugal collected data on forty four previous marketing campaigns, which have yielded mixed results.  The team would like to leverage the data from generated during the campaigns to generate profiles of future customers most likely to consign a loan so that they can maximize customer loan sales.
+The bank of Portugal collected data on forty four marketing campaigns aimed at signing existing account holders a term deposit.  Previous campaigns averaged a conversion rate of 11%.  The bank would like to leverage data collected during the campaigns to target customers in future campaigns in order to optimize marketing resources and increase the conversion rate.
 
 Recommendations:
 
@@ -9,38 +9,59 @@ Recommendations:
 Sales executives should target the following customers:
 
 - Repeat customers
-     -  Customers who previously took a loan are 6x more likely to sign a loan
+     -  Customers who previously took a loan are 6x more likely to sign up for a term deposit
 -  Long Duration
-     -  Customers who have been with the bank over 220 days at 5.5x more likely to sign a loan than customers with a shorter duration
+     -  Customers who have been with the bank over 220 days are 5.5x more likely to sign up han customers with a shorter duration
 -  Students and retirees
-     -  Students and retirees are 2.5x more likely than  to sign a loan than other occupations
--  Home Owners
-     -  Customers without a home are 2x more likely to sign a loan than customers who already 
-        have a home
+     -  Students and retirees are 2.5x more likely than other jobs to sign a loan
+-  Renters
+     -  Renters are 2x more likely to sign up than home owners
 -  Large Balance
-     -  Customers with a minimum balance of $1300 are 1.5x more likely to sign a loan than customers with a lower balance
+     -  Customers with a minimum balance of $1300 are 1.5x more likely to sign up
 
 
-Data Activities:
+Data Description:
+
+-  16 features are including in the data:
+
+Age of the customer
+Customer occupation
+Marital Status
+Highest level of education
+Whether the customer was in default
+Customer Account Balance
+Whether the customer owns their house
+Whether they currently have a loan
+Whether the customer was previously contacted
+Date of last contact
+Month of last contact
+Duration they have held their account
+Number of days since their last contact
+Number of previous contacts
+Outcome of previous contacts
+Whether a client signed up for a term deposit
+
+ Full descriptions of the features can be found in the “Attribute Information” section of this link.
+
+Data Preparations:
 
 -  Eleven of the attributes required conversion to a numerical type, including whether or not a loan was sold to a client (column ‘y’).   
 
 -  Historical data shows that 11% of customer accepted a bank loan (referred to as the “conversion rate” in our model).  This data point will serve as the criterion for our models.
 
--  The data collected includes 45k records of sixteen features and a yes/no indicator as to  whether the customer agreed to take a loan from the bank.  
-
--  Full information on the features can be found in the “Attribute Information” section of this link.
+-  The data collected includes 45k records with no nulls or duplicates
 
 Methodology:
 
--  Prepare and compare the performance of four logistic regression models
--  Identify the most important features in the models, which can be used to build high value cohorts
--  Build cohorts and compare predicted conversion rates for each.  The highest scoring cohorts will drive our recommendations to the marketing team
+-  Scale the data and fit the data to four logistic regression models
+-  Identify the most important features in the models
+-  Use the highest weighted features to build potentially high value cohorts
+-  Derive insights from the highest performing cohorts identified within the process
 
 Models:
 
 We produced six models, which scored just below 70% precision.  While 70% may be low
-In another context, it serves us well here given that our starting point was effectively 11%.
+In another context, it serves us well here given that our initial conversion rate is effectively 11%.
 
 Regression Models:
 -  Decision Tree
@@ -65,6 +86,8 @@ Features to Pursue:
      -  Housing scored highly for both linear regression and SVC
 -  Balance
      -  Balance was the second highest indicator for decision tree
+- Occupation
+
 
 
 Features to Disregard:
@@ -93,8 +116,8 @@ Finally we calculated conversion rate for a long list of cohorts, isolated and b
      -  Customers with a balance over $1300
 -  Housing
      -  Customer who do not already have a housing loan
--  Student
-     -  Students
+-  Occupation
+     -  Occupation was not included in the regression models because it is not numerical.  However, because it was the only categorical feature, we were able to use groupings to identify that students were slightly more likely to sign up for a term deposit than renters.
 -  Repeat Customers
      -  Customers who previously took a loan
 -  Duration
